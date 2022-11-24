@@ -1,0 +1,37 @@
+mark {
+  color: lemonchiffon;
+  background-color: darkorchid;
+}
+
+samp,
+html {
+  color: midnightblue;
+  background-color: orchid;
+}
+
+::selection {
+  background-color: midnightblue;
+  color: orchid;
+}
+
+:any-link {
+  color: inherit;
+  background-color: transparent;
+}
+
+:focus {
+  outline-color: currentColor;
+}
+
+@media (prefers-color-scheme: dark) {
+  mark {
+    color: midnightblue;
+    background-color: orchid;
+  }
+
+  samp,
+  html {
+    color: lemonchiffon;
+    background-color: darkorchid;
+  }
+}
